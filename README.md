@@ -3,6 +3,7 @@ List of usefull linux aliases
 
 # Git
 
+```bash
 alias gi-s='git status'
 alias gi-a='git add'
 alias gi-c='git commit'
@@ -12,8 +13,11 @@ alias gi-l='git log'
 alias gi-d='git diff'
 alias gi-dc='git diff --cached'
 alias gi-r='git remote -v'
+```
 
 # Packages
+
+```bash
 alias pa-apt='sudo apt'
 alias pa-update='sudo apt update'
 alias pa-upgrade='sudo apt upgrade'
@@ -21,13 +25,17 @@ alias pa-install='sudo apt install'
 alias pa-remove='sudo apt remove'
 alias pa-upgradable='sudo apt list --upgradable'
 alias pa-search='sudo apt-cache search'
+```
 
 # Services
-alias pa-services='sudo netstat -nutelap'
 
+```bash
+alias se-services='sudo netstat -nutelap'
+```
 
 # Docker
 
+```bash
 alias do-cls='docker ps -a'
 alias do-clr='docker ps'
 alias do-ils='docker images'
@@ -40,8 +48,11 @@ alias do-ins='docker inspect'
 alias do-run='docker run -it'
 alias do-cup='docker-compose up'
 alias do-cwn='docker-compose down'
+```
 
 # Systemd
+
+```bash
 alias sy-start='sudo systemctl start'
 alias sy-stop='sudo systemctl stop'
 alias sy-restart='sudo systemctl restart'
@@ -52,3 +63,4 @@ alias sy-status='sudo systemctl status'
 alias sy-logs='sudo journalctl -u'
 alias sy-servicelist='systemctl list-units --type=service --all'
 alias sy-failedunits='sudo systemctl --failed'
+```
