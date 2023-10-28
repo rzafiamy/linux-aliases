@@ -1,7 +1,10 @@
 # linux-aliases
+
+# Aliases
+
 List of usefull linux aliases
 
-# Git
+## Git
 
 ```bash
 alias gi-s='git status'
@@ -15,7 +18,7 @@ alias gi-dc='git diff --cached'
 alias gi-r='git remote -v'
 ```
 
-# Packages
+## Packages
 
 ```bash
 alias pa-apt='sudo apt'
@@ -27,13 +30,13 @@ alias pa-upgradable='sudo apt list --upgradable'
 alias pa-search='sudo apt-cache search'
 ```
 
-# Services
+## Services
 
 ```bash
 alias se-services='sudo netstat -nutelap'
 ```
 
-# Docker
+## Docker
 
 ```bash
 alias do-cls='docker ps -a'
@@ -50,7 +53,7 @@ alias do-cup='docker-compose up'
 alias do-cwn='docker-compose down'
 ```
 
-# Systemd
+## Systemd
 
 ```bash
 alias sy-start='sudo systemctl start'
@@ -64,3 +67,23 @@ alias sy-logs='sudo journalctl -u'
 alias sy-servicelist='systemctl list-units --type=service --all'
 alias sy-failedunits='sudo systemctl --failed'
 ```
+
+# How to setup aliases
+
+## 1. Backup Your .bashrc
+
+Before making any changes to your `.bashrc` file, it's crucial to create a backup. This will help you restore your previous aliases and settings if something goes wrong during the setup process.
+
+To back up your `.bashrc`, you can use the following command:
+
+```bash
+cp ~/.bashrc ~/.bashrc.bak
+```
+
+## 2. Run setup script
+
+```bash
+chmod +x setup_aliases.sh
+./setup_aliases.sh
+```
+
