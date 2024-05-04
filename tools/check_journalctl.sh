@@ -31,11 +31,13 @@ display_logs() {
         log_command+=" ${log_options[*]}"
     fi
 
-    $log_command | while IFS= read -r line; do
+    $log_command | while IFS= read -r line; 
+    do
         # Implement logic to format and colorize log entries based on severity
         # Use regex or other techniques to extract log timestamp, severity, and message
         # Apply colors accordingly
         # Display the log entry
+        echo ""
     done
 }
 
