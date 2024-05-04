@@ -22,7 +22,7 @@ create_venv() {
 activate_venv() {
     if [ -d "$FULL_VENV_PATH" ]; then
         source "$FULL_VENV_PATH/bin/activate"
-        echo "Activated virtual environment at $FULL_VENV_PATH"
+        echo "source $FULL_VENV_PATH/bin/activate"
     else
         echo "Virtual environment does not exist at $FULL_VENV_PATH"
     fi
